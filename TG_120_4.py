@@ -1,0 +1,11 @@
+price_1=float(input('Введите цену первого товара '))
+price_2=float(input('Введите цену второго товара '))              
+price_3=float(input('Введите цену третьго товара '))
+price_4=float(input('Введите цену четвертого товара '))
+price_5=float(input('Введите цену пятого товара '))
+accum_cost=price_1+price_2+price_3+price_4+price_5
+sales_tax=accum_cost*0.07
+total_amount=accum_cost+sales_tax
+print('Накопленная стоимость=',format(accum_cost,'.2f'))
+print('Сумма налога с продаж=',format(sales_tax,'.2f'))
+print('Итоговая сумма=',format(total_amount,'.2f'))

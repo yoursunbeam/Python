@@ -1,0 +1,6 @@
+basic_amount_money=float(input('Введите суммму денег,которую хотите внести '))
+annual_interest_rate=float(input('Введите годовую процентную ставку '))
+frequeny_charging=int(input('Введите частоту начисления процентного дохода в год '))
+years=int(input('Введите длительность вклада в годах '))
+account_balance=(basic_amount_money*((1+annual_interest_rate/(frequeny_charging*100))**(frequeny_charging*years)))
+print('Сумма денег на счете в итоге=',format(account_balance,'.2f'))

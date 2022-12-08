@@ -1,0 +1,10 @@
+purchase_price=float(input('Введите величину покупки '))
+federal_tax=purchase_price*0.05
+regional_tax=purchase_price*0.025
+general_tax=federal_tax+regional_tax
+total_amount=purchase_price+general_tax
+print('Сумма покупки=',purchase_price)
+print('Федеральный налог с продаж=',format(federal_tax,'.2f'))
+print('Региональный налог с продаж=',format(regional_tax,'.2f'))
+print('Общий налог с продаж=',format(general_tax,'.2f'))
+print('Общая сумма продажи=',format(total_amount,'.2f'))
